@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina 4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <style>
+            body {
+                background: url("https://i.imgur.com/KEFsUJs.png") no-repeat center center fixed;
+                background-size: cover;
+                padding-top: 70px;
+            }
+
+            .bg-overlay {
+                background-color: rgba(0, 0, 0, 0.75);
+                padding: 2rem;
+                border-radius: 15px;
+                color: white;
+            }
+
+            .text-black {
+                color: black !important;
+            }
+
+            /* Colores personalizados para párrafos */
+            .color1 {
+                color: #804301;
+            }
+            .color2 {
+                color: #640173;
+            }
+            .color3 {
+                color: #013d04;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <span class="navbar-brand">Godot</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="caracteristicas.html">Características</a></li>
+                        <li class="nav-item"><a class="nav-link" href="exhibicion.html">Exhibición</a></li>
+                        <li class="nav-item"><a class="nav-link" href="scripting.html">Scripting</a></li>
+                        <li class="nav-item"><a class="nav-link" href="interfaz.html">Interfaz</a></li>
+                        <li class="nav-item"><a class="nav-link" href="comparativa.html">Comparativa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="assets&plugins.html">Assets & Plugins</a></li>
+                        <li class="nav-item"><a class="nav-link" href="boletin.html">Boletín</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid mt-4">
+            <div class="bg-overlay">
+                <div class="bg-success text-white p-3 rounded mb-4">
+                <h2 class="text-center text-decoration-underline text-black">Scripting y lenguaje de programación en Godot</h2>
+                </div>
+                <br>
+                <div class="bg-secondary text-white p-3 rounded mb-4">
+                    <p class="color1 m-0">
+                        Godot se caracteriza por su flexibilidad a la hora de programar, permitiendo a los desarrolladores elegir entre varios lenguajes según su experiencia o necesidades. 
+                        El lenguaje principal del motor es <strong>GDScript</strong>, un lenguaje de programación diseñado específicamente para Godot. Su sintaxis es muy similar a Python, 
+                        lo que lo hace fácil de aprender y muy legible. Está profundamente integrado con el motor, por lo que ofrece una experiencia de desarrollo fluida, con autocompletado, 
+                        depuración en tiempo real y una rápida curva de aprendizaje, especialmente útil para quienes recién comienzan en el desarrollo de videojuegos.
+                    </p>
+                </div>
+
+                <div class="bg-secondary text-white p-3 rounded mb-4">
+                    <p class="color2 m-0">
+                        Además de GDScript, Godot también ofrece soporte para <strong><i>C#</i></strong>, una opción muy atractiva para desarrolladores que vienen de otros entornos como Unity. 
+                        Gracias a esta compatibilidad, es posible aprovechar el rendimiento, la estructura y la robustez de C#, lo que facilita la migración de proyectos y el aprovechamiento 
+                        de librerías externas del ecosistema .NET. Para trabajar con C# en Godot, es necesario tener instalado el SDK de .NET, pero una vez configurado, se puede trabajar con 
+                        él directamente desde el editor.
+                    </p>
+                </div>
+
+                <div class="bg-secondary text-white p-3 rounded mb-4">
+                    <p class="color3 m-0">
+                        Además de estos dos lenguajes, Godot también ofrece otras alternativas, como <strong>VisualScript</strong>, un sistema visual de programación similar a los Blueprints 
+                        de Unreal Engine, pensado para quienes prefieren una lógica visual sin escribir código directamente. También se pueden usar otros lenguajes como <strong>C++</strong>, 
+                        mediante GDNative, o incluso <strong>Python</strong> y <strong>Rust</strong> a través de bindings desarrollados por la comunidad. Esta variedad convierte a Godot en un 
+                        entorno flexible que se adapta tanto a principiantes como a programadores avanzados.
+                    </p>
+                </div>
+
+                <br>
+                <div class="text-center">
+                    <div class="bg-info text-white p-3 rounded mb-4">
+                    <h3 class="fst-italic text-black">Tutorial de cómo programar con GDScript</h3>
+                    </div>
+                    <video width="600" controls>
+                        <source src="videos/How to program in Godot - GDScript Tutorial.mp4" type="video/mp4">
+                        Your browser does not support the <code>video</code> tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="d-flex justify-content-center mt-4">
+            <div class="btn-group" role="group" aria-label="Navegación entre páginas">
+                <a href="exhibicion.html" class="btn btn-secondary">← Anterior</a>
+                <a href="interfaz.html" class="btn btn-secondary">Siguiente →</a>
+            </div>
+        </div>
+        <br>
+
+
+    </body>
+</html>

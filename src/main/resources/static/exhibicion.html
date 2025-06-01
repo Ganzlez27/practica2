@@ -20,9 +20,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <style>
             body {
                 background-size: cover;
+                padding-top: 70px;
             }
             .bg-overlay {
-                background-color: rgba(108, 117, 125, 0.8);
+                background-color: rgba(0, 0, 0, 0.75);
                 padding: 2rem;
                 border-radius: 15px;
                 color: white;
@@ -31,8 +32,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 color: white !important;
             }
         </style>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <span class="navbar-brand">Godot</span> <!-- Ya no es un enlace -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -42,66 +43,77 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="caracteristicas.html">Características</a></li>
-                        <li class="nav-item"><a class="nav-link" href="exhibicion.html">Exhibicion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="exhibicion.html">Exhibición</a></li>
                         <li class="nav-item"><a class="nav-link" href="scripting.html">Scripting</a></li>
-                        <li class="nav-item"><a class="nav-link" href="interface.html">Interfaz</a></li>
-                        <li class="nav-item"><a class="nav-link" href="multiplataforma.html">Multiplataforma</a></li>
-                        <li class="nav-item"><a class="nav-link" href="recursos.html">Recursos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="interfaz.html">Interfaz</a></li>
+                        <li class="nav-item"><a class="nav-link" href="comparativa.html">Comparativa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="assets&plugins.html">Assets & Plugins</a></li>
+                        <li class="nav-item"><a class="nav-link" href="boletin.html">Boletín</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
         <div class="container mt-4 bg-overlay">
-            <h1 class="text-white text-center text-decoration-underline">Exhibición de videojuegos hechos en Godot</h1>
-            <br>
-            <br>
-            <!-- Juego 1 -->
-            <div class="row text-center text-white mb-4">
-                <div class="col-12">
-                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2440380/header.jpg?t=1747804824"
-                         class="img-fluid rounded border mb-2" alt="Juego 1">
-                    <h5>Megaloot</h5>
-                    <p><em>Dungeon Crawler / RPG</em></p>
-                    <div>
-                        <h4>Soundtrack del juego</h4>
+            <h1 h1 class="text-center d-inline-block bg-secondary text-white px-3 py-2 rounded text-decoration-underline">Exhibición de videojuegos hechos en Godot</h1>
+            <br><br>
+
+            <div class="row text-white">
+                <!-- Columna izquierda: Juego 1 y 2 -->
+                <div class="col-md-6">
+                    <!-- Juego 1 -->
+                    <div class="mb-4 text-center">
+                        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2440380/header.jpg?t=1747804824"
+                             class="img-fluid rounded border mb-2" alt="Juego 1">
+                        <h5>Megaloot</h5>
+                        <p><em>Dungeon Crawler / RPG</em></p>
+                        <h6>Soundtrack del juego</h6>
                         <audio controls>
                             <source src="audios/Megaloot (Original Soundtrack).mp3" type="audio/mpeg">
-                            Your browser does not support the <code>audio</code> tag.
+                            Tu navegador no soporta el elemento <code>audio</code>.
                         </audio>
                     </div>
-                </div>
-            </div>
 
-            <!-- Juego 2 -->
-            <div class="row text-center text-white mb-4">
-                <div class="col-12">
-                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2643290/header.jpg?t=1742479466"
-                         class="img-fluid rounded border mb-2" alt="Juego 1">
-                    <h5>Oblin Party</h5>
-                    <p><em>Phisics Based / 2D Fighter</em></p>
-                    <div>
-                        <h4>Soundtrack del juego</h4>
+                    <!-- Juego 2 -->
+                    <div class="mb-4 text-center">
+                        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2643290/header.jpg?t=1742479466"
+                             class="img-fluid rounded border mb-2" alt="Juego 2">
+                        <h5>Oblin Party</h5>
+                        <p><em>Physics Based / 2D Fighter</em></p>
+                        <h6>Soundtrack del juego</h6>
                         <audio controls>
                             <source src="audios/Oblin Party - Official Release Date Trailer.mp3" type="audio/mpeg">
-                            Your browser does not support the <code>audio</code> tag.
+                            Tu navegador no soporta el elemento <code>audio</code>.
                         </audio>
                     </div>
                 </div>
-            </div>
 
-            <!-- Juego 3 -->
-            <div class="row text-center text-white mb-4">
-                <div class="col-12">
-                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2498570/header.jpg?t=1738096697"
-                         class="img-fluid rounded border mb-2" alt="Juego 1">
-                    <h5>Canvas of Kings</h5>
-                    <p><em>Sandbox / Building</em></p>
-                    <div>
-                        <h4>Soundtrack del juego</h4>
+                <!-- Columna derecha: Juego 3 y 4 -->
+                <div class="col-md-6">
+                    <!-- Juego 3 -->
+                    <div class="mb-4 text-center">
+                        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2498570/header.jpg?t=1738096697"
+                             class="img-fluid rounded border mb-2" alt="Juego 3">
+                        <h5>Canvas of Kings</h5>
+                        <p><em>Sandbox / Building</em></p>
+                        <h6>Soundtrack del juego</h6>
                         <audio controls>
                             <source src="audios/Canvas of Kings - OST.mp3" type="audio/mpeg">
+                            Tu navegador no soporta el elemento <code>audio</code>.
+                        </audio>
+                    </div>
+
+                    <!-- Juego 4 -->
+                    <div class="mb-4 text-center">
+                        <img src="https://i.ytimg.com/vi/fSUjX3F_g3Y/maxresdefault.jpg"
+                             class="img-fluid rounded border mb-2"
+                             alt="Juego 4"
+                             style="max-height: 460px; width: 65%; object-fit: cover;">
+                        <h5>Madness/Endless</h5>
+                        <p><em>Action / Stealth</em></p>
+                        <h6>Soundtrack del juego</h6>
+                        <audio controls>
+                            <source src="audios/Madness_Endless Trailer.mp3" type="audio/mpeg">
                             Your browser does not support the <code>audio</code> tag.
                         </audio>
                     </div>
@@ -109,8 +121,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </div>
         </div>
 
-
-
+        <br>
+        <div class="d-flex justify-content-center mt-4">
+            <div class="btn-group" role="group" aria-label="Navegación entre páginas">
+                <a href="caracteristicas.html" class="btn btn-secondary">← Anterior</a>
+                <a href="scripting.html" class="btn btn-secondary">Siguiente →</a>
+            </div>
+        </div>
+        <br>
 
     </body>
 </html>
